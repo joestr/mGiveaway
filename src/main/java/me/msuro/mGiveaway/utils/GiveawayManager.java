@@ -21,8 +21,8 @@ public class GiveawayManager {
     // Giveaway name -> Giveaway object
     private final HashMap<String, Giveaway> giveaways = new HashMap<>();
 
-    public GiveawayManager() {
-        this.instance = MGiveaway.getInstance();
+    public GiveawayManager(MGiveaway mGiveaway) {
+        this.instance = mGiveaway;
     }
 
     public void startGiveaway(Giveaway giveaway) {

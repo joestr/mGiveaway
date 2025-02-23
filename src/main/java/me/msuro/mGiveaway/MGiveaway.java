@@ -73,7 +73,7 @@ public final class MGiveaway extends JavaPlugin {
         }
 
         // --- Initialize GiveawayManager and other components ---
-        giveawayManager = new GiveawayManager();
+        giveawayManager = new GiveawayManager(instance);
         new PlayerListener();
         new Reload();
         new ConfigUtil();
